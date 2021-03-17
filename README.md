@@ -1,1 +1,3 @@
-# 664_final
+This project is about the E-Commerce industry. The overall goal is to build a database containing information related to the available items on sale. Our initial thoughts on database models/attributes are Product title, Product category, Price, Brand, Quantity, Rating, Seller, and Product description.
+There is one Many-to-Many relationship so far, which is between the tables of seller names and items because a seller could sell multiple items, while an item could be available from multiple sellers. 
+We have thought of three One-to-Many relationships so far, which are product category to items (one category points to multiple items on sale),  item to individual ratings (one item pointing to multiple individual ratings), and brand to items (one brand pointing to multiple products).
