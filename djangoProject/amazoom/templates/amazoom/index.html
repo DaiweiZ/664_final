@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FirstPage</title>
+</head>
+<body>
+<p>Hola, My friend</p>
+<nav>
+  <a href="/signup/">Sign Up</a> |
+  <a href="/signin/">Sign In</a> |
+  <a href="/help/">Help</a> |
+
+</nav>
+<h1>Products</h1>
+{% block content %}
+{% if ad_list %}
+    {% for ad in ad_list %}
+        {{ ad }}
+    {% endfor %}
+{% endif %}
+{% endblock %}
+</body>
+</html>
